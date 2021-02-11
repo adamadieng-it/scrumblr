@@ -28,7 +28,7 @@ nconf.set('server:port', 8080);
 
 nconf.set('ga:account', 'UA-2069672-4');
 
-nconf.set('redis:url', 'redis://127.0.0.1:6379');
+nconf.set('redis:url', 'redis://0.0.0.0:6379');
 nconf.set('redis:prefix', '#scrumblr#');
 
 console.log('NODE_ENV: ' + nconf.get('NODE_ENV'));
