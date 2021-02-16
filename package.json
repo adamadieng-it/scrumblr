@@ -5,7 +5,7 @@
   "repository": {
     "url": "http://github.com/aliasaria/scrumblr"
   },
-  "author": "Ali Asaria",
+  "author": "Adama DIENG - Equipe Systemes Fraudbuster",
   "main": "server.js",
   "directories": {
     "lib": "lib/"

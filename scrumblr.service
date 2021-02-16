@@ -3,7 +3,7 @@ After=network.target
 
 [Service]
 ExecStart=/usr/bin/node server.js --server:port=80
-WorkingDirectory=/var/www/scrumblr
+WorkingDirectory=/opt/scrumblr
 Restart=always
 Environment=NODE_ENV=production
 
