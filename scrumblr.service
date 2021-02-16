@@ -1,9 +1,17 @@
 [Unit]
+Description=Scrumblr Management Service
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/node server.js --server:port=80
-WorkingDirectory=/opt/scrumblr
+
+User=scrumblr
+Group=scrumblr
+# PID du processus du service scrumblr.
+RuntimeDirectory=scrumblr
+PIDFile=/var/run/scrumblr/scrumblr.pid
+
+ExecStart=/usr/bin/node server.js --server:port=81
+WorkingDirectory=/opt/scrumblr/projet
 Restart=always
 Environment=NODE_ENV=production
 
